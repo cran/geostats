@@ -34,8 +34,9 @@ logit.density <- function(x,inverse=TRUE,...){
     if (inverse | all(x$x>0)){
         out <- x
         out$x <- logit(x$x,inverse=inverse,...)
-        dx <- diff(out$x)
-        out$y <- x$y/c(dx,utils::tail(dx,1))
+        dxin <- diff(x$x)
+        dxout <- diff(out$x)
+        out$y <- c(dxin,utils::tail(dxin,1))*x$y/c(dxout,utils::tail(dxout,1))
     } else {
         stop('Cannot apply the logit transformation to negative values.')
     }
@@ -60,8 +61,9 @@ logit.density <- function(x,inverse=TRUE,...){
 exp.density <- function(x){
     out <- x
     out$x <- exp(x$x)
-    dx <- diff(out$x)
-    out$y <- x$y/c(dx,utils::tail(dx,1))
+    dxin <- diff(x$x)
+    dxout <- diff(out$x)
+    out$y <- c(dxin,utils::tail(dxin,1))*x$y/c(dxout,utils::tail(dxout,1))
     out    
 }
 

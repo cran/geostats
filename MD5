@@ -1,4 +1,4 @@
-0fbd7a82c3706fa16d909d22a1e6f709 *DESCRIPTION
+38fffd9a88aa334f16b5c60933660fc3 *DESCRIPTION
 196a5c08e35790f8b044033cf7f8fc2f *NAMESPACE
 02b9f6dc111bbeec0dc906c9a7a878e7 *R/directional.R
 ef9e2dd1bfcc56606c69dbafce9f319b *R/documentation.R
@@ -10,7 +10,7 @@ df41095a3a8f9126d8de05d06655e287 *R/kriging.R
 41ae204ec22453e9b5b49605cda74bc4 *R/stereonet.R
 9b1968bd41360b83fe8c1d1128be8aa4 *R/ternary.R
 fdcfa69304aec94fcba80b1a4efe5c51 *R/toolbox.R
-c0039bb40f3baf041b835fc6462b4bdf *R/transformations.R
+b14ca44426ef498d037415bb59ae7cf5 *R/transformations.R
 2d927375e2d68303fb21e3313558a770 *R/unsupervised.R
 0af3a3037dab63a6c2dc566ba0b5a340 *R/york.R
 cb966612ea27ca92ac0b6d6c2ff93e42 *data/ACNK.rda
