@@ -8,7 +8,7 @@
 .lsnr <- function(snr){
     lsnr <- rep(0,3)
     lsnr[1] <- log(snr[1])
-    lsnr[2] <- log(snr[2]/snr[1])
+    lsnr[2] <- log(snr[2]) - log(snr[1]-snr[2])
     lsnr[3] <- log(snr[3])
     lsnr
 }
@@ -26,10 +26,6 @@ semivarmod <- function(h,lsnr,model='spherical'){
     } else if (model=='exponential'){
         i <- (h>0)
         out[i] <- s + (n-s)*exp(-h[i]/r)
-    } else if (model=='linear'){
-        i <- (h<r) & (h>0)
-        out[i] <- n + (s-n)*h[i]/r
-        out[h>=r] <- s
     } else if (model=='gaussian'){
         i <- (h>0)
         out[i] <- s + (n-s) * exp(-(h[i]/r)^2)
@@ -64,7 +60,7 @@ semivarmod <- function(h,lsnr,model='spherical'){
 #' semivariogram(x=meuse$x,y=meuse$y,z=log(meuse$cadmium))
 #' @export
 semivariogram <- function(x,y,z,bw=NULL,nb=13,plot=TRUE,fit=TRUE,
-                          model=c('spherical','linear','exponential','gaussian'),
+                          model=c('spherical','exponential','gaussian'),
                           ...){
     d <- as.matrix(stats::dist(cbind(x,y)))
     if (is.null(bw)){
@@ -147,7 +143,6 @@ kriging <- function(x,y,z,xi,yi,svm,grid=FALSE,err=FALSE){
     W[N+1,N+1] <- 0
     out <- NA*xi
     Y <- c(z,0)
-    # test data
     if (grid){
         xyi <- expand.grid(xi,yi)
         Xi <- xyi[,1]
@@ -158,7 +153,13 @@ kriging <- function(x,y,z,xi,yi,svm,grid=FALSE,err=FALSE){
     }
     vzi <- NA*Xi
     if (grid){
-        good <- which(inhull(x,y,Xi,Yi))
+        buffer <- 0.05
+        dx <- buffer*(max(x)-min(x))
+        dy <- buffer*(max(y)-min(y))
+        xy <- cbind(c(x-dx,x-dx,x+dx,x+dx),
+                    c(y-dy,y+dy,y-dy,y+dy))
+        i <- chull(xy)
+        good <- which(inside(cbind(Xi,Yi),xy[i,,drop=FALSE]))
     } else {
         good <- 1:length(vzi)
     }

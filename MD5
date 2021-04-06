@@ -1,11 +1,11 @@
-91f035ba89aca74a6aafc53fc56eac75 *DESCRIPTION
+d8e79014745e491f011aba9e3b05ae70 *DESCRIPTION
 196a5c08e35790f8b044033cf7f8fc2f *NAMESPACE
 02b9f6dc111bbeec0dc906c9a7a878e7 *R/directional.R
 a13441620926d022621d5d1775f73aaa *R/documentation.R
 50408bab8b9af6315c0c8bf33ecbe3e9 *R/fractals.R
 beceaee4afe0a4645a1dea37cd565fe1 *R/geostats.R
-9022bf272d369500dd8b9b4e696b8638 *R/helper.R
-df41095a3a8f9126d8de05d06655e287 *R/kriging.R
+d5138e46f90f16b5415bfee1b1953471 *R/helper.R
+a1a9d4e836541338a5961e7c9b55b833 *R/kriging.R
 893009eae289033ee7ee1b7e750e3d21 *R/spurious.R
 41ae204ec22453e9b5b49605cda74bc4 *R/stereonet.R
 9b1968bd41360b83fe8c1d1128be8aa4 *R/ternary.R
@@ -53,7 +53,7 @@ a7c8030cba65393d6dde53303baae3dc *man/circle.plot.Rd
 40aed7c495dd48c514ea93524c2bf34a *man/circle.points.Rd
 9bf9a3f3962015c7c11b02b28de41ea1 *man/clasts.Rd
 921438eb206943e220035026105b6050 *man/clr.Rd
-0e6003ff07936abc40425e64757aeef8 *man/colourplot.Rd
+b8c24a07b22bf0eebd0714d5efb99065 *man/colourplot.Rd
 1691d0b4158025374323d7892680c439 *man/countQuakes.Rd
 a8fa5f45d5a55d52a356968319594e60 *man/declustered.Rd
 21a2753667ad4e101d25ea78a5994970 *man/earthquakes.Rd
@@ -80,7 +80,7 @@ aa8b718b95494198c9698b8a262f7e8a *man/porosity.Rd
 b60b066967b18e6aa74da4c713d0c3dc *man/randy.Rd
 486858d78f13ffbe00ce06e1f94229f7 *man/rbsr.Rd
 1e43aadd52d5dcc961b30fed9ca612a1 *man/rwyxz.Rd
-6dbea032e1501fbd497492e7045f04eb *man/semivariogram.Rd
+537f11b99e23dcc9c59da3dbefb8595b *man/semivariogram.Rd
 2b217f4ef3232dede182888c2dd87fa3 *man/sierpinski.Rd
 893bbb9d7552a9881e230f385f6173b0 *man/sizefrequency.Rd
 55dc575c222cb99048241d73ec23717f *man/skew.Rd
