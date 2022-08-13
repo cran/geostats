@@ -1,8 +1,8 @@
-4af455dedab7ea4bdb2afc4b0a72bc12 *DESCRIPTION
+19546fc9001ccc8fdaeb81d2def474f1 *DESCRIPTION
 196a5c08e35790f8b044033cf7f8fc2f *NAMESPACE
 02b9f6dc111bbeec0dc906c9a7a878e7 *R/directional.R
 74bb8f29b9932bba646f1a2c9f5efd9c *R/documentation.R
-67f4858250ae28399d21a6259ed3fb77 *R/fractals.R
+b8c757385f5be08874dfa85b75a003ca *R/fractals.R
 beceaee4afe0a4645a1dea37cd565fe1 *R/geostats.R
 d5138e46f90f16b5415bfee1b1953471 *R/helper.R
 9f5c3be8b5d8e7282850d82e3f693014 *R/kriging.R
@@ -10,7 +10,7 @@ d5138e46f90f16b5415bfee1b1953471 *R/helper.R
 41ae204ec22453e9b5b49605cda74bc4 *R/stereonet.R
 9b1968bd41360b83fe8c1d1128be8aa4 *R/ternary.R
 fdcfa69304aec94fcba80b1a4efe5c51 *R/toolbox.R
-95b3085f1dc840e5c8c6ad227093650c *R/transformations.R
+d435bef9a3e29fbbb16ea7dce433e766 *R/transformations.R
 2d927375e2d68303fb21e3313558a770 *R/unsupervised.R
 0af3a3037dab63a6c2dc566ba0b5a340 *R/york.R
 cb966612ea27ca92ac0b6d6c2ff93e42 *data/ACNK.rda
@@ -49,7 +49,7 @@ df68444e521b5efa63193d4b50e6baf5 *man/Mode.Rd
 21847395a5310dbe3b02ea0d9d0e446a *man/PCA2D.Rd
 b71bb5633c2c50c8c02940c08a608ceb *man/Rbar.Rd
 ca8f3e8bf3b02eb5b7df4e90f86d7c89 *man/Rbar2kappa.Rd
-dbd42505ccf94a9e444fe2874b231944 *man/alr.Rd
+289f3df8f72b3219a74cc3964ae1074b *man/alr.Rd
 921616fc71639e96be8f9805da933315 *man/boxcount.Rd
 3001d64b78a583d6e50572f6281af741 *man/cantor.Rd
 a7c8030cba65393d6dde53303baae3dc *man/circle.plot.Rd
@@ -78,7 +78,7 @@ f9b9c1d735da089064aed9a1d403b021 *man/meanangle.Rd
 4027e054f969482a2f90ff2bece94e35 *man/meuse.Rd
 1b2810c487ec30c281e9182bc7621e4d *man/pH.Rd
 3ddf39f0f2177f31da46ea929e39ba66 *man/palaeomag.Rd
-7084bdf21ba364825c85689dc7c0a7a7 *man/pendulum.Rd
+9ee4eabb78b4c300a6a72f3bca54b99e *man/pendulum.Rd
 38766e442df10ced3182de26a103c884 *man/pop.Rd
 aa8b718b95494198c9698b8a262f7e8a *man/porosity.Rd
 b60b066967b18e6aa74da4c713d0c3dc *man/randy.Rd
