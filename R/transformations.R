@@ -9,8 +9,8 @@
 #' @param ... optional arguments to the \code{log} function.
 #' @return a vector with the same length of \code{x}
 #' @examples
-#' data(porosity,package='geostats')
-#' lp <- logit(porosity,inverse=FALSE)
+#' data(catchments,package='geostats')
+#' lp <- logit(catchments$vegetation/100,inverse=FALSE)
 #' ld <- density(lp)
 #' d <- logit(ld,inverse=TRUE)
 #' plot(d)
@@ -51,8 +51,8 @@ logit.density <- function(x,inverse=TRUE,...){
 #' @param x an object of class \code{density}
 #' @return an object of class \code{density}
 #' @examples
-#' data(clasts,package='geostats')
-#' lc <- log(clasts)
+#' data(catchments,package='geostats')
+#' lc <- log(catchments$CaMg)
 #' ld <- density(lc)
 #' d <- exp(ld)
 #' plot(d)

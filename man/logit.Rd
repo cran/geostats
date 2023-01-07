@@ -30,8 +30,8 @@ Maps numbers from [0,1] to [\eqn{-\infty,+\infty}] and
     back.
 }
 \examples{
-data(porosity,package='geostats')
-lp <- logit(porosity,inverse=FALSE)
+data(catchments,package='geostats')
+lp <- logit(catchments$vegetation/100,inverse=FALSE)
 ld <- density(lp)
 d <- logit(ld,inverse=TRUE)
 plot(d)

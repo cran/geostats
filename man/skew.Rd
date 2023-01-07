@@ -16,6 +16,6 @@ a scalar
 Compute the third moment of a sampling distribution.
 }
 \examples{
-data(porosity,package='geostats')
-skew(porosity)
+data(catchments,package='geostats')
+skew(catchments$vegetation)
 }
